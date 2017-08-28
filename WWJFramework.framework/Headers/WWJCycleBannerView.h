@@ -1,9 +1,6 @@
 //
-//  KDCycleBannerView.h
-//  KDCycleBannerViewDemo
-//
-//  Created by Kingiol on 14-4-11.
-//  Copyright (c) 2014年 Kingiol. All rights reserved.
+//  Created by wwj on 16-6-7.
+//  Copyright (c) 2016年 wwj. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
