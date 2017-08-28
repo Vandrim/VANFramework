@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Vandrim/VANFramework.git", :tag => "#{s.version}" }
   s.frameworks   = "Foundation", "UIKit"
   s.resource   	 = "Resources.bundle"
-  s.vendored_frameworks = "WWJFramework.framework"
+  s.vendored_frameworks = "WWJFramework.framework", "AFNetworking.framework", "MJExtension.framework", "SDAutoLayout.framework", "SDWebImage.framework",
   s.requires_arc = true
 end
