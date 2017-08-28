@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.frameworks   = "Foundation", "UIKit"
   s.requires_arc = true
   s.resource    = "Resources.bundle"
-  s.vendored_frameworks = "WWJFramework.framework", "SDAutoLayout.framework", "SDWebImage.framework", "AFNetworking.framework", "MJExtension.framework"
+  s.vendored_frameworks = "WWJFramework.framework"
 end
