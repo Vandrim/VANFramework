@@ -1,0 +1,6 @@
+framework module WWJFramework {
+  umbrella header "WWJFramework.h"
+
+  export *
+  module * { export * }
+}
