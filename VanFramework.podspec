@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "A Framework of iOS development. It will help developer more efficient"
   s.homepage     = "https://github.com/Vandrim/VANFramework"
-  s.license      = "Copyright (c) 2017年 Vandrim. All rights reserved."
+  s.license      = "MIT"
   s.author       = { "vandrim" => "vandrim@163.com"}
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/Vandrim/VANFramework.git", :tag => "#{s.version}" }
