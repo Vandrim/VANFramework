@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/Vandrim/VANFramework.git", :tag => "#{s.version}" }
   s.frameworks   = "Foundation", "UIKit"
-  s.requires_arc = true
-  s.resource    = "Resources.bundle"
+  s.resource   	 = "Resources.bundle"
   s.vendored_frameworks = "WWJFramework.framework"
+  s.requires_arc = true
 end
