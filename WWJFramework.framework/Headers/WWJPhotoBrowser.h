@@ -6,7 +6,7 @@
 #import <UIKit/UIKit.h>
 
 
-@class SDButton, WWJPhotoBrowser;
+@class  WWJPhotoBrowser;
 
 @protocol WWJPhotoBrowserDelegate <NSObject>
 
