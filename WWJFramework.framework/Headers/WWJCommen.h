@@ -105,4 +105,7 @@ typedef enum {
 //打开消息推送设置页面
 + (void)openMessageNotificationService;
 
+//将金额转成汉字大写
++ (NSString *)toCapitalLetters:(NSString *)money;
+
 @end

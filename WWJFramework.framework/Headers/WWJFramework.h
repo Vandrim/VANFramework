@@ -38,6 +38,9 @@ FOUNDATION_EXPORT const unsigned char WWJFrameworkVersionString[];
 #import "WWJCycleBannerView.h"
 #import "WWJHighlightedButton.h"
 #import "WWJAuthorityManager.h"
+#import "WWJNavView.h"
+#import "WWJBottomView.h"
+
 //sdwebimage
 //#import "WWJSDWebImage.h"
 #import "WWJWebViewController.h"
