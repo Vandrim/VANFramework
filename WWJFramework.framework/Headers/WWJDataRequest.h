@@ -9,15 +9,20 @@
 typedef void(^WWJDateRequestSuccessBlock)(NSInteger statusCode,id data);
 typedef void(^WWJDateRequestErrorBlock)(NSError *error);
 
+typedef enum {
+    POST = 0,
+    GET,
+} NetworkMethod;
+
 @interface WWJDataRequest : NSObject
 
 +(instancetype)sharedInstanceWithBaseURL:(NSString *)baseURL;
 
 //通用
--(void)commenWithURL:(NSString *)urlString
-               hDict:(NSMutableDictionary *)hDict
-               pDict:(NSMutableDictionary *)pDict
-        successBlock:(WWJDateRequestSuccessBlock)successblock
-          errorBlock:(WWJDateRequestErrorBlock)errorblock;
-
+-(void)requestWithURL:(NSString *)urlString
+        andMethodType:(NetworkMethod)type
+        andHeaderDict:(NSMutableDictionary *)headerDict
+        andParamsDict:(NSMutableDictionary *)paramsDict
+      andSuccessBlock:(WWJDateRequestSuccessBlock)successblock
+        andErrorBlock:(WWJDateRequestErrorBlock)errorblock;
 @end
