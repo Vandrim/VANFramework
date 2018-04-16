@@ -21,7 +21,7 @@ FOUNDATION_EXPORT const unsigned char WWJFrameworkVersionString[];
 #import "WWJAlert.h"
 #import "WWJCommen.h"
 #import "WWJConstant.h"
-#import "WWJDataLocalization.h"
+#import "WWJKeyedArchiver.h"
 #import "WWJDataRequest.h"
 #import "WWJHairline.h"
 #import "WWJHairlineLabel.h"
@@ -40,6 +40,7 @@ FOUNDATION_EXPORT const unsigned char WWJFrameworkVersionString[];
 #import "WWJAuthorityManager.h"
 #import "WWJNavView.h"
 #import "WWJBottomView.h"
+#import "WWJKeychainManager.h"
 
 //sdwebimage
 //#import "WWJSDWebImage.h"

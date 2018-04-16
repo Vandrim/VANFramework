@@ -10,17 +10,26 @@
 #define iPhone4 ([UIScreen mainScreen].bounds.size.height == 480)
 #define iPhone5 ([UIScreen mainScreen].bounds.size.height == 568)
 #define iPhone6 ([UIScreen mainScreen].bounds.size.height == 667)
-#define iPhone6p ([UIScreen mainScreen].bounds.size.height > 667)
+#define iPhone6p ([UIScreen mainScreen].bounds.size.height == 736)
+#define iPhoneX ([UIScreen mainScreen].bounds.size.height == 812)
 
 //系统版本
 #define IOS_VERSION          [[[UIDevice currentDevice] systemVersion] floatValue]
+//系统版本是否高于某个版本
+#define SYSTEM_VERSION_GREATER_THAN(systemVersion)  ([[[UIDevice currentDevice] systemVersion] compare:systemVersion options:NSNumericSearch] == NSOrderedDescending)
 
-#define IS_IOS_10_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)
-#define IS_IOS_9_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
-#define IS_IOS_8_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
-#define IS_IOS_7_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
-#define IS_IOS_6_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0)
+#define iOS11_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0)
+#define iOS10_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)
+#define iOS9_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
+#define iOS8_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define iOS7_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+#define iOS6_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0)
 
 //device screen size
 #define kScreenWidth          [[UIScreen mainScreen] bounds].size.width
 #define kScreenHeight         [[UIScreen mainScreen] bounds].size.height
+
+//preference（偏好设置）
+#define WWJUserDefaults [NSUserDefaults standardUserDefaults]
+
+

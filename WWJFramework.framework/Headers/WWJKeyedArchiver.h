@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WWJDataLocalization : NSObject
+@interface WWJKeyedArchiver : NSObject
 
 //获取数据
 +(id)getDataWithFileName:(NSString *)fileName;
