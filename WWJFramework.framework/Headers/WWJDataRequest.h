@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 //块定义
-typedef void(^WWJDateRequestSuccessBlock)(NSInteger statusCode,id data);
+typedef void(^WWJDateRequestSuccessBlock)(NSHTTPURLResponse *response,id data);
 typedef void(^WWJDateRequestErrorBlock)(NSError *error);
 
 typedef enum {
