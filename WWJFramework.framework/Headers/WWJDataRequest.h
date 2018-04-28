@@ -14,15 +14,30 @@ typedef enum {
     GET,
 } NetworkMethod;
 
+typedef enum {
+    JSON = 0,
+    HTTP,
+    XML,
+} ResponseType;
+
 @interface WWJDataRequest : NSObject
 
 +(instancetype)sharedInstanceWithBaseURL:(NSString *)baseURL;
 
-//通用
+//网络请求
 -(void)requestWithURL:(NSString *)urlString
         andMethodType:(NetworkMethod)type
         andHeaderDict:(NSMutableDictionary *)headerDict
         andParamsDict:(NSMutableDictionary *)paramsDict
-      andSuccessBlock:(WWJDateRequestSuccessBlock)successblock
-        andErrorBlock:(WWJDateRequestErrorBlock)errorblock;
+      andSuccessBlock:(WWJDateRequestSuccessBlock)successBlock
+        andErrorBlock:(WWJDateRequestErrorBlock)errorBlock;
+
+//网络请求可修改返回数据类型
+-(void)requestWithURL:(NSString *)urlString
+        andMethodType:(NetworkMethod)type
+   responseSerializer:(ResponseType)responseSerializer
+        andHeaderDict:(NSMutableDictionary *)headerDict
+        andParamsDict:(NSMutableDictionary *)paramsDict
+      andSuccessBlock:(WWJDateRequestSuccessBlock)successBlock
+        andErrorBlock:(WWJDateRequestErrorBlock)errorBlock;
 @end
