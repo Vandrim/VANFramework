@@ -22,7 +22,7 @@ typedef enum {
 
 @interface WWJDataRequest : NSObject
 
-+(instancetype)sharedInstanceWithBaseURL:(NSString *)baseURL;
++(instancetype)sharedInstanceWithBaseURL:(NSString *)baseURL andHandleCookies:(BOOL)handCookies;
 
 //网络请求
 -(void)requestWithURL:(NSString *)urlString
