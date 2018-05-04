@@ -14,12 +14,19 @@ typedef void (^KeychainFailBolck)(OSStatus status);
  *
  *    @param     info     用户信息
  */
-+(void)saveKeychainInfoWithKey:(NSString *)key data:(NSDictionary *)info success:(KeychainSuccessBolck)successBlock fail:(KeychainFailBolck)failBlock;
++(void)addKeychainInfoWithKey:(NSString *)key data:(NSDictionary *)info success:(KeychainSuccessBolck)successBlock fail:(KeychainFailBolck)failBlock;
+
+/**
+ *    @brief    更新用户数据
+ *
+ *    @param     info     用户信息
+ */
++(void)updateKeychainInfoWithKey:(NSString *)key data:(NSDictionary *)info success:(KeychainSuccessBolck)successBlock fail:(KeychainFailBolck)failBlock;
 
 /**
  *    @brief    读取用户数据
  */
-+(void)loadKeychainInfoWithKey:(NSString *)key Success:(KeychainSuccessBolck)successBlock fail:(KeychainFailBolck)failBlock;
++(void)readKeychainInfoWithKey:(NSString *)key Success:(KeychainSuccessBolck)successBlock fail:(KeychainFailBolck)failBlock;
 
 /**
  *    @brief    删除用户数据
