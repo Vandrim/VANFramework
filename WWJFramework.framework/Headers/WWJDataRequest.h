@@ -12,6 +12,8 @@ typedef void(^WWJDateRequestErrorBlock)(NSError *error);
 typedef enum {
     POST = 0,
     GET,
+    PUT,
+    DELETE,
 } NetworkMethod;
 
 typedef enum {
