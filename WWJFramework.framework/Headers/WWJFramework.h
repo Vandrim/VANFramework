@@ -35,7 +35,6 @@ FOUNDATION_EXPORT const unsigned char WWJFrameworkVersionString[];
 #import "NSString+WWJTokenizer.h"
 #import "UIColor+Extension.h"
 #import "WWJPhotoBrowser.h"
-#import "WWJCycleBannerView.h"
 #import "WWJHighlightedButton.h"
 #import "WWJAuthorityManager.h"
 #import "WWJNavView.h"
