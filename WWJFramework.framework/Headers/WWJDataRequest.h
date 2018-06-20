@@ -28,18 +28,11 @@ typedef enum {
 
 //网络请求
 -(void)requestWithURL:(NSString *)urlString
-        andMethodType:(NetworkMethod)type
-        andHeaderDict:(NSMutableDictionary *)headerDict
-        andParamsDict:(NSMutableDictionary *)paramsDict
-      andSuccessBlock:(WWJDateRequestSuccessBlock)successBlock
-        andErrorBlock:(WWJDateRequestErrorBlock)errorBlock;
+           andMethodType:(NetworkMethod)type
+      responseSerializer:(ResponseType)responseSerializer
+           andHeaderDict:(NSMutableDictionary *)headerDict
+           andParamsDict:(NSMutableDictionary *)paramsDict
+         andSuccessBlock:(WWJDateRequestSuccessBlock)successblock
+           andErrorBlock:(WWJDateRequestErrorBlock)errorblock;
 
-//网络请求可修改返回数据类型
--(void)requestWithURL:(NSString *)urlString
-        andMethodType:(NetworkMethod)type
-   responseSerializer:(ResponseType)responseSerializer
-        andHeaderDict:(NSMutableDictionary *)headerDict
-        andParamsDict:(NSMutableDictionary *)paramsDict
-      andSuccessBlock:(WWJDateRequestSuccessBlock)successBlock
-        andErrorBlock:(WWJDateRequestErrorBlock)errorBlock;
 @end

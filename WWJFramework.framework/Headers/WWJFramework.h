@@ -18,7 +18,7 @@ FOUNDATION_EXPORT const unsigned char WWJFrameworkVersionString[];
 
 #import "WWJActionSheet.h"
 #import "WWJActivity.h"
-#import "WWJAlert.h"
+#import "WWJToast.h"
 #import "WWJCommen.h"
 #import "WWJConstant.h"
 #import "WWJKeyedArchiver.h"

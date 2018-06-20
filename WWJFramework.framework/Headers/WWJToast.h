@@ -14,9 +14,9 @@ typedef enum
 }ToastStyle;
 
 
-@interface WWJAlert : NSObject
-+ (void)showString:(NSString*)format, ...;
-+ (void)showString:(NSString*)format inView:(UIView *)showView;
+@interface WWJToast : NSObject
+//+ (void)showString:(NSString*)format, ...;
++ (void)showString:(NSString*)format inView:(UIView *)view;
 
 //new view == nil 时，显示在window层
 + (void)toastWithString:(NSString*)string andStyle:(ToastStyle)style inView:(UIView *)view withOffsetY:(CGFloat)offsetY;
