@@ -8,4 +8,5 @@
 @interface WWJHairline : UIView
 @property (nonatomic,assign) BOOL hLineAlignRight;
 @property (nonatomic,assign) BOOL vLineAlignBottom;
+@property (nonatomic,strong) UIColor * lineColor;
 @end

@@ -32,4 +32,14 @@
 //preference（偏好设置）
 #define WWJUserDefaults [NSUserDefaults standardUserDefaults]
 
+//判断字符串是否有值
+#define MF_NULL_OR_EMPTY(str) ((NSNull *)str == [NSNull null] || str == nil || ((NSString *)[NSString stringWithFormat:@"%@",str]).length == 0)
+
+//弹框的TAG
+#define POPTAG 10086
+
+//KeyWindow
+#define KeyWindow [[UIApplication sharedApplication] keyWindow]
+
+
 
