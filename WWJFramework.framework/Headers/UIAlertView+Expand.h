@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface UIAlertView (Blocks)<UIAlertViewDelegate>
+@interface UIAlertView (Expand)<UIAlertViewDelegate>
 
 /* 
  

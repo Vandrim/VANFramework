@@ -15,4 +15,7 @@
 - (NSString *) aesEncryptWithKey:(NSString *)key;
 - (NSString *) aesDecryptWithKey:(NSString *)key;
 
+//分词
+- (NSArray *)stringTokenizer;
+
 @end

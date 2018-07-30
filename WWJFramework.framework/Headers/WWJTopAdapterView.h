@@ -1,5 +1,5 @@
 //
-//  WWJBottomView.h
+//  WWJNavView.h
 //  Invoice
 //
 //  Created by wwj on 2017/10/11.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WWJBottomView : UIView
+@interface WWJTopAdapterView : UIView
 
 @end

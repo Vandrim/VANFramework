@@ -10,4 +10,6 @@
 
 @interface WWJHighlightedButton : UIButton
 
+//点击高亮按钮
+
 @end

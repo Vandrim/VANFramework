@@ -5,8 +5,8 @@
 
 #import <UIKit/UIKit.h>
 
-#define IOSVersion                          [[[UIDevice currentDevice] systemVersion] floatValue]
-#define IsiOS7Later                         !(IOSVersion < 7.0)
+#define IOSVersion  [[[UIDevice currentDevice] systemVersion] floatValue]
+#define IsiOS7Later !(IOSVersion < 7.0)
 
 @interface WWJNavigationController : UINavigationController
 
