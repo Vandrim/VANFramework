@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "VanFramework"
-  s.version      = "2.0.2"
+  s.version      = "2.1.0"
   s.summary      = "A Framework of iOS development. It will help developer more efficient"
   s.homepage     = "https://github.com/Vandrim/VANFramework"
   s.license      = "MIT"
@@ -9,6 +9,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Vandrim/VANFramework.git", :tag => "#{s.version}" }
   s.frameworks   = "Foundation", "UIKit"
   s.resource   	 = "Resources.bundle"
-  s.vendored_frameworks = "WWJFramework.framework", "SDAutoLayout.framework", "AFNetworking.framework"
+  s.vendored_frameworks = "WWJFramework.framework"
   s.requires_arc = true
+  s.dependency 'AFNetworking', '>= 3.2.1'
+  s.dependency 'SDAutoLayout', '>= 2.2.1'
 end
