@@ -38,6 +38,12 @@
 //弹框的TAG
 #define POPTAG 10086
 
+//ToastTAG
+#define ToastTAG 10010
+
+//菊花弹框TAG
+#define HUD_TAG 10010
+
 //KeyWindow
 #define KeyWindow [[UIApplication sharedApplication] keyWindow]
 
