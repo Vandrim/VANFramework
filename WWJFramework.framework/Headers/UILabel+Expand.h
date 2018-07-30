@@ -1,5 +1,5 @@
 //
-//  UILabel+Extension.h
+//  UILabel+Expand.h
 //  qsd
 //
 //  Created by chenliliang on 16/2/25.
