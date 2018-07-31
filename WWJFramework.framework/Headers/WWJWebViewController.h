@@ -10,26 +10,33 @@
 
 @interface WWJWebBuilder : NSObject
 
-//进度条颜色
-@property (nonatomic,strong) UIColor *progressColor;
-//导航背景
-@property (nonatomic,strong) UIColor *navBackColor;
-//导航标题颜色
-@property (nonatomic,strong) UIColor *navTitleColor;
-//分割线颜色
-@property (nonatomic,strong) UIColor *lineColor;
-//导航标题字体
-@property (nonatomic,strong) UIFont *navFont;
+//是否safari
+@property (nonatomic,assign) BOOL safari;
+
 //标题
-@property (nonatomic,copy) NSString *webtitle;
+@property (nonatomic,copy) NSString *webTitle;
 //链接地址
-@property (nonatomic,copy) NSString *weburl;
-//是否uiwebview
-@property (nonatomic,assign) BOOL isUIWebview;
+@property (nonatomic,copy) NSString *webUrl;
+
+//导航标题字体
+@property (nonatomic,strong) UIFont *webTitleFont;
+//导航标题颜色
+@property (nonatomic,strong) UIColor *webTitleColor;
+
+//进度条颜色
+@property (nonatomic,strong) UIColor *webProgressColor;
+//导航背景
+@property (nonatomic,strong) UIColor *webNavgationBarBackgroundColor;
+//分割线颜色
+@property (nonatomic,strong) UIColor *webNavgationBarLineColor;
+
+//----------------本地HTML加载-------------
+//是否本地HTML
+@property (nonatomic,assign) BOOL isLocalHtml;
 //加载本地html字符串
-@property (nonatomic,copy) NSString *htmlStr;
+@property (nonatomic,copy) NSString *localHtmlContent;
 //加载本地html的baseurl
-@property (nonatomic,copy) NSURL *baseURL;
+@property (nonatomic,copy) NSURL *localHtmlBaseURL;
 
 @end
 
@@ -38,26 +45,33 @@ typedef void (^WWJWebBuilderBlock) (WWJWebBuilder *builder);
 
 @interface WWJWebViewController : UIViewController
 
-//进度条颜色
-@property (nonatomic,strong) UIColor *progressColor;
-//导航背景
-@property (nonatomic,strong) UIColor *navBackColor;
-//导航标题颜色
-@property (nonatomic,strong) UIColor *navTitleColor;
-//导航标题字体
-@property (nonatomic,strong) UIFont *navFont;
-//分割线颜色
-@property (nonatomic,strong) UIColor *lineColor;
+//是否safari
+@property (nonatomic,assign) BOOL safari;
+
 //标题
-@property (nonatomic,copy) NSString *webtitle;
+@property (nonatomic,copy) NSString *webTitle;
 //链接地址
-@property (nonatomic,copy) NSString *weburl;
-//是否uiwebview
-@property (nonatomic,assign) BOOL isUIWebview;
+@property (nonatomic,copy) NSString *webUrl;
+
+//导航标题字体
+@property (nonatomic,strong) UIFont *webTitleFont;
+//导航标题颜色
+@property (nonatomic,strong) UIColor *webTitleColor;
+
+//进度条颜色
+@property (nonatomic,strong) UIColor *webProgressColor;
+//导航背景
+@property (nonatomic,strong) UIColor *webNavgationBarBackgroundColor;
+//分割线颜色
+@property (nonatomic,strong) UIColor *webNavgationBarLineColor;
+
+//----------------本地HTML加载-------------
+//是否本地HTML
+@property (nonatomic,assign) BOOL isLocalHtml;
 //加载本地html字符串
-@property (nonatomic,copy) NSString *htmlStr;
+@property (nonatomic,copy) NSString *localHtmlContent;
 //加载本地html的baseurl
-@property (nonatomic,copy) NSURL *baseURL;
+@property (nonatomic,copy) NSURL *localHtmlBaseURL;
 
 + (WWJWebViewController *)creatWithBuilder:(WWJWebBuilderBlock)block;
 
