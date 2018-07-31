@@ -5,8 +5,7 @@
 //  Copyright © 2018年 WW. All rights reserved.
 //
 
-//#import <MJRefresh/MJRefresh.h>
-@import MJRefresh;
+#import <MJRefresh/MJRefresh.h>
 
 @interface WWJRefreshHeaderAdapterView : MJRefreshNormalHeader
 
