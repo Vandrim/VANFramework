@@ -35,7 +35,6 @@ FOUNDATION_EXPORT const unsigned char WWJFrameworkVersionString[];
 #import "WWJAuthorityManager.h"
 #import "WWJTopAdapterView.h"
 #import "WWJBottomAdapterView.h"
-#import "WWJRefreshHeaderAdapterView.h"
 #import "WWJKeychainManager.h"
 #import "WWJWebViewController.h"
 
