@@ -11,7 +11,7 @@
 #define iPhone5 ([UIScreen mainScreen].bounds.size.height == 568)
 #define iPhone6 ([UIScreen mainScreen].bounds.size.height == 667)
 #define iPhone6p ([UIScreen mainScreen].bounds.size.height == 736)
-#define iPhoneX ([UIScreen mainScreen].bounds.size.height == 812)
+#define iPhoneX ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896.0)
 
 //系统版本
 #define IOS_VERSION          [[[UIDevice currentDevice] systemVersion] floatValue]
