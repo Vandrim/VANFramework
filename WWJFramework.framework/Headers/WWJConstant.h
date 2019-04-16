@@ -6,12 +6,16 @@
 
 #import <Foundation/Foundation.h>
 
+//device screen size
+#define kScreenWidth          [[UIScreen mainScreen] bounds].size.width
+#define kScreenHeight         [[UIScreen mainScreen] bounds].size.height
+
 //device
-#define iPhone4 ([UIScreen mainScreen].bounds.size.height == 480.0)
-#define iPhone5 ([UIScreen mainScreen].bounds.size.height == 568.0)
-#define iPhone6 ([UIScreen mainScreen].bounds.size.height == 667.0)
-#define iPhone6p ([UIScreen mainScreen].bounds.size.height == 736.0)
-#define iPhoneX ([UIScreen mainScreen].bounds.size.height == 812.0 || [UIScreen mainScreen].bounds.size.height == 896.0)
+#define iPhone4 (kScreenHeight == 480.0)
+#define iPhone5 (kScreenHeight == 568.0)
+#define iPhone6 (kScreenHeight == 667.0)
+#define iPhone6p (kScreenHeight == 736.0)
+#define iPhoneX (kScreenHeight == 812.0 || kScreenHeight == 896.0)
 
 //系统版本
 #define IOS_VERSION          [[[UIDevice currentDevice] systemVersion] floatValue]
@@ -24,10 +28,6 @@
 #define iOS8_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
 #define iOS7_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
 #define iOS6_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0)
-
-//device screen size
-#define kScreenWidth          [[UIScreen mainScreen] bounds].size.width
-#define kScreenHeight         [[UIScreen mainScreen] bounds].size.height
 
 //preference（偏好设置）
 #define WWJUserDefaults [NSUserDefaults standardUserDefaults]

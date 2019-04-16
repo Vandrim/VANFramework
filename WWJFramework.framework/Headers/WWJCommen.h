@@ -108,4 +108,7 @@ typedef enum {
 //将金额转成汉字大写
 + (NSString *)toCapitalLetters:(NSString *)money;
 
+//获取当前时间戳（以毫秒为单位）
++ (NSString *)getNowTimeTimestamp;
+
 @end

@@ -16,5 +16,10 @@
 - (void)setText:(NSString *)text withColor:(UIColor *)color;
 /** 富文本 行间距*/
 - (void)setText:(NSString *)text withLineSpacing:(CGFloat)lineSpacing;
+/** 富文本*/
+- (void)getAttString:(NSString *)day font:(CGFloat)font;
 
+- (void)getAttString:(NSString *)day color:(NSString *)color;
+
+- (void)setText:(NSString*)text lineSpacing:(CGFloat)lineSpacing;
 @end

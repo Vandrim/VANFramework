@@ -5,6 +5,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, VANDateType) {
+    VANDateTypeLine = 0,//0000-00-00
+    VANDateTypeChinese, //0000年00月00日
+    VANDateTypeSecond, //0000-00-00 00:00:00
+    VANDateTypeDot, //0000.00.00
+};
 @interface NSString(Expand)
 
 //md5加密
@@ -17,5 +23,20 @@
 
 //分词
 - (NSArray *)stringTokenizer;
+
+//去掉汉字
+- (NSString *)stringWipeOffChinese;
+
+//计算文字宽度
+- (CGFloat)calculateWidthWithFont:(UIFont *)font;
+
+//计算文字高度
+- (CGFloat)calculateHeightWithFont:(UIFont *)font andWidth:(CGFloat)width;
+
+//json转数组
+- (NSArray *)jsonArrayToArray;
+
+//字符串转日期
+- (NSString *)stringToDataWithType:(VANDateType)dateType;
 
 @end
