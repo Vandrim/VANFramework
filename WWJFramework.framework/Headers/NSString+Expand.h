@@ -39,4 +39,32 @@ typedef NS_ENUM(NSInteger, VANDateType) {
 //字符串转日期
 - (NSString *)stringToDataWithType:(VANDateType)dateType;
 
+
+//首字母大写
+- (NSString *)capitalizedFirstLetter;
+//url编码
+- (NSString *)urlEncode;
+//url解码
+- (NSString *)urlDecode;
+
+/**
+ * 计算文字高度，可以处理计算带行间距的
+ */
+- (CGSize)boundingRectWithSize:(CGSize)size
+                          font:(UIFont*)font
+                   lineSpacing:(CGFloat)lineSpacing;
+
+//json串转换成数组
+- (id)arrayWithJsonString;
+
+//字符串转日期
+- (NSString *)van_stringToDataWithType:(VANDateType)dateType andStartTime:(NSString *)startTime;
+
+//日期格式化
+- (NSString *)dateStringToDataWithType:(VANDateType)dateType andStartTime:(NSString *)startTime;
+
+// 字符串时间—>时间戳
+- (NSTimeInterval)timestamp;
+
+
 @end

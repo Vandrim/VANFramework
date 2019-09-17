@@ -40,6 +40,9 @@ FOUNDATION_EXPORT const unsigned char WWJFrameworkVersionString[];
 #import "VANAlert.h"
 #import "NSArray+Extension.h"
 #import "UIImage+VANImage.h"
+#import "CALayer+VANExtension.h"
+#import "UIView+Core.h"
+#import "VANRadianView.h"
 #import "UIViewController+Back.h"
 
 
