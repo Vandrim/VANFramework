@@ -22,7 +22,7 @@ FOUNDATION_EXPORT const unsigned char WWJFrameworkVersionString[];
 #import "WWJAlertView.h"
 #import "WWJCommen.h"
 #import "WWJKeyedArchiver.h"
-#import "WWJDataRequest.h"
+//#import "WWJDataRequest.h"
 #import "WWJHairline.h"
 #import "UILabel+Expand.h"
 #import "WWJNavigationController.h"

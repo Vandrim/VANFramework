@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "VanFramework"
-  s.version      = "2.12.0"
+  s.version      = "2.13.0"
   s.summary      = "A Framework of iOS development. It will help developer more efficient"
   s.homepage     = "https://github.com/Vandrim/VANFramework"
   s.license      = "MIT"
@@ -11,6 +11,5 @@ Pod::Spec.new do |s|
   s.resource   	 = "Resources.bundle"
   s.vendored_frameworks = "WWJFramework.framework"
   s.requires_arc = true
-  s.dependency 'AFNetworking', '>= 3.2.1'
   s.dependency 'Masonry', '>= 1.1.0'
 end
